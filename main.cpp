@@ -7,17 +7,19 @@
 #include "fibonacci.h"
 #include "math.h"
 
+using namespace std;
+
 int main()
 {
     int x, y;
-    std::cout << "Enter your two numbers, for which you want to find the largest possible divisor: ";
-    std::cout << std::endl;
-    std::cout << "x: ";
-    std::cin >> x;
-    std::cout << "y: ";
-    std::cin >> y;
+    cout << "Enter your two numbers, for which you want to find the largest possible divisor: ";
+    cout << std::endl;
+    cout << "x: ";
+    cin >> x;
+    cout << "y: ";
+    cin >> y;
     double number = largestCommonDivisor(x, y);
-    std::cout << "The largest possible divisor for " + std::to_string(x) + " and " + std::to_string(y) + " is " + std::to_string(number);
+    cout << "The largest possible divisor for " + std::to_string(x) + " and " + std::to_string(y) + " is " + std::to_string(number);
     return 0;
 }
 
