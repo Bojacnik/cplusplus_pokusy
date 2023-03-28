@@ -9,7 +9,20 @@
 
 using namespace std;
 
-int main()
+int main() {
+    char* pamet = (char*)malloc(5 * sizeof(char));
+    *pamet = 65;
+    *(pamet + 1) = 66;   // write into second byte
+    *(pamet + 2) = 67;   // write into third byte
+    *(pamet + 3) = 68;   // write into fourth byte
+    *(pamet + 4) = '\0';
+
+    cout << pamet;
+}
+
+
+
+int main4()
 {
     int x, y;
     cout << "Enter your two numbers, for which you want to find the largest possible divisor: ";
